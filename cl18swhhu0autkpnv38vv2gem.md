@@ -111,7 +111,7 @@ Make sure you are currently in demo_folder
 
     1. ```
     git log
-    ``` will show you all your comments and the time when they were created NOTE: it will show comment name as well as it’s hash code
+    ``` will show you all your comments and the time when they were created NOTE: it will show comment name as well as it’s hash code (which looks like this commit : **9d5e3b2b6d9a5fe41ce5143004c9d14f199bfaf1**). Every commit has different hashcode
 
 
 - ### Creating online repository 
@@ -190,6 +190,17 @@ That's it, that's how we can make contribute to the project with Git and GitHub
 
 ![GIT2.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648458117547/EyYmWSjs0.png)
 
+- ### This branch is behind/ ahead of master branch 
+
+1. 
+You will face this in you GitHub if you are working on project, coz you are not only the one who is working on the project, there are other members too, which are making changes, so how we can add those changes to our repository of the project too.
+
+1. Go to GitHub and click on **fetch** > then **fetch merger** or you can go in command like ```
+git pull upstream master
+```
+
+
+
 - ### Some advance concepts of Git and GitHub
 
 - ### Branch and Why we shouldn't commet on master branch
@@ -212,15 +223,52 @@ If you finalise your comment by commenting on it and now you wanna merge it with
 
 - ### Pull Request 
 
-1. 
-Pull request: if we want to merge our branch to the project we make request. When you create your own copy, and you change in your own copy how do you make sure that this change will be visible in the main project. You will make pull request.
+    1. 
+    Pull request: if we want to merge our branch to the project we make request. When you create your own copy, and you change in your own copy how do you make sure that this change will be visible in the main project. You will make pull request.
 
-1. 
-Why we need to make a pull request ? coz we can’t directly push to git push upstream branchname, coz we don’t have access to that we only have access to origin. NOTE: for every new feature or bug create new pull request/new branch, one branch can only request one pull request
+    1. 
+    Why we need to make a pull request ? coz we can’t directly push to git push upstream branchname, coz we don’t have access to that we only have access to origin. NOTE: for every new feature or bug create new pull request/new branch, one branch can only request one pull request
 
 
 - ### Staging Area
+If you added a file, and. you don't want to add it you want to undo it then we can use 
+```git restore --staged filename
+```  NOTE: we only added that file not take a comment/ snapshot of that file 
 
+- ### How to delete our comments
+git comments are store one after the other hence if we remove any comment by copying it’s hash code(which you will get when you give command ```
+git log
+```) it will remove all the comment above it As you can do it with ```
+git reset hash-code
+```
+
+
+- ### How to save changes without commenting
+
+    1. 
+    How we can store all our desire work at anyplace without making a comment of that and whenever we want it back we can have it.  The command for that: All the changes we created without using the comment we want to save them we can use ```
+git stash
+```   it will delete all the non added file from the folder but saved as stash. Now if we want all changes back like we want our files which are store in stash back we can use 
+```git stash pop
+```  
+    1. 
+    If we permanently want to deleted those changes that we saved as stash and we can never have them by git stash pop we can use. ```
+git stash clear
+```  command
+
+
+- ### Squishing comments
+
+merging all the comment into single comment  ```
+git branch branchname
+``` ---> ```
+git checkout branchname
+```  ---> (make sure your main/ master branch is uptodate before doing this) -->  ```
+git rebase -i hashcode
+``` ```
+git log
+``` for (hashcode) (of comment before that)  all comments with s (squash) and not pick and comment pick above all s, then all s will be squish into pick comment. ---> it will allow you to comment on the merged comment.
+What are **merge conflicts **how to resolve them: if two individuals make a change on same lines then it is merge conflict when we merge them in master branch it will have to resolve to the leader of the project to resolve this conflict manually.
 
 
 
