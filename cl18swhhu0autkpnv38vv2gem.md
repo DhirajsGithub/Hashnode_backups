@@ -1,6 +1,6 @@
 ## Git And GitHub Complete Tutorial
 
-#In this tutorial you will be learning Git and GitHub, we will be doing it by making our local repository and will go into the advance stuff like contributing to our team repository, staging area and so on... so stay stunned !
+#In this tutorial you will be learning Git and GitHub, we will be doing it by making our local repository and will go into the advance stuff like contributing to our team repository, staging area and so on... so stay tuned !
 
 
 - ### What is Git and GitHub
