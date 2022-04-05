@@ -275,7 +275,7 @@ What are **merge conflicts **how to resolve them: if two individuals make a chan
 ![why-git.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648613798064/UlP9MF6L8.png)
 
 
-
+I found this course of @[Kunal Kushwaha](@kunalk)'s  [Git and GitHub](https://www.youtube.com/watch?v=apGV9Kg7ics&t=3753s) useful.
 
 
 
