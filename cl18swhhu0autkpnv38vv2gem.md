@@ -271,11 +271,32 @@ git log
 What are **merge conflicts **how to resolve them: if two individuals make a change on same lines then it is merge conflict when we merge them in master branch it will have to resolve to the leader of the project to resolve this conflict manually.
 
 
+![1650558611171.jpg](https://cdn.hashnode.com/res/hashnode/image/upload/v1650558759538/jjC0UDCDU.jpg)
+
+
+- 
+### side hustle
+
+
+1. $ git rm - - cached -r .  —> will remove the added file from staging area i.e. before commit area
+
+1. Gitignore: in your files $ touch .gitignore file must present, ls -a In .gitignore we will have all that file name which will be ignore as we add with add . And also ignore them with the commit We can also specify like *.txt in .gitignore will ignore all the files with .txt extension. 
+1.  From https://github.com/github/gitignore This is GitHub's collection of .gitignore file templates. We use this list to populate the .gitignore template choosers available in the GitHub.com interface Local repository contain .git file and remote repository is Github
+1. As you change the branch with git checkout branchname we can also see the changes in out local repository We can merge our branch with master branch using $ git merger branchname , but firstly make sure to checkout the master branch In out remote repository we have insight > in it we have network we can see how many branches were there 
+1.  Bro working with another bro:- first fork bor’s repository then clone it to you local shit then make the desire changes then push it to your remote repository form there you will make a pull request to your bro’s repository
+
+
+
+
+
+
+
+
+
 
 ![why-git.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648613798064/UlP9MF6L8.png)
 
 
-I found this course of @[Kunal Kushwaha](@kunalk)'s  [Git and GitHub](https://www.youtube.com/watch?v=apGV9Kg7ics&t=3753s) useful.
 
 
 
